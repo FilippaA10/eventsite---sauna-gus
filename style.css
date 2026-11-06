@@ -1,10 +1,55 @@
+/*fonts*/
+
+/*h1*/
+@font-face {
+  font-family: "Merriweather", serif;
+  src: url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Chewy&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+  font-optical-sizing: auto;
+  font-weight: 300;
+  ont-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/*h2 og h3*/
+@font-face {
+  font-family: "Roboto Mono", monospace;
+  src: url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Chewy&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Metrophobic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Chewy&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Metrophobic&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+}
+
+/*Fonts til tekst*/
+
+h1 {
+  font-family: "Merriweather", serif;
+}
+
+h2,
+h3,
+a,
+.top-bar {
+  font-family: "Roboto Mono", monospace;
+}
+
+p {
+  font-family: "Metrophobic", sans-serif;
+}
+
 /* Variabler */
 html {
-  --color-page: #f7f7f7;
-  --color-surface: #fff;
+  --color-page: #f1e1c6;
+  --color-surface: #f1e1c6;
   --color-text: #222;
   --color-muted: #666;
-  --color-border: #d8d8d8;
+  --color-border: #64513d;
   --space-05: 0.5rem;
   --space-1: 1rem;
   --space-2: 2rem;
@@ -252,13 +297,173 @@ main > * {
   text-decoration: none;
 }
 
-/***forside***/
-.grid-forsidetekst {
-  @media (width > 800px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+/**MENU**/
+.top-bar {
+  grid-column: 1/-1;
+  padding-block: var(--space-05);
+  background: #4b3927;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
 
-    background-color: #36401f;
-  }
+.site-header {
+  border-bottom: 1px solid #64513d;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.logo-billede {
+  height: 2rem;
+  width: 2rem;
+}
+
+.menu a {
+  font-size: 0.875rem;
+}
+
+/***forside***/
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.h1forside {
+  font-size: 96px;
+  color: #df5119;
+  text-shadow: 0 2px 12px rgb(0 0 0 / 0.5);
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  white-space: nowrap;
+}
+.saunaforside {
+  width: 1200px;
+  height: 600px;
+  margin-bottom: 30px;
+  object-fit: cover;
+}
+
+.punderh1 {
+  font-size: 23px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 450px;
+  text-align: center;
+  margin: 0;
+}
+.buttonforside {
+  position: absolute;
+  top: 63%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4b3927;
+  opacity: 78%;
+  color: white;
+  padding: 16px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.buttonforside:hover {
+  background-color: #f1c89c;
+}
+
+.grid-forsidetekst {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 0;
+  padding: 60px;
+
+  background-color: #2c35192c;
+}
+
+.omhytten h2 {
+  font-size: 25px;
+  margin: 0 0 24px 0;
+}
+
+.omhytten p {
+  font-size: 20px;
+  margin: 0;
+  line-height: 1.6;
+  max-width: 45ch;
+}
+
+.hyttenssanser h2 {
+  font-size: 25px;
+  margin: 0 0 24px 0;
+}
+
+.hyttenssanser p {
+  font-size: 20px;
+  margin: 0px;
+  line-height: 1.6;
+  max-width: 45ch;
+}
+
+.udforskhytten {
+  grid-column: 1 /-1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.voresolier {
+  background: #2c35192c;
+  padding: 1rem;
+}
+
+.voresolier img {
+  width: 100%;
+  display: block;
+}
+
+/*Selve popoveren*/
+.oliepopover {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  padding: 1rem;
+  max-height: 90vh;
+  max-width: 90vw;
+  width: 50ch;
+  height: fit-content;
+  background: #2c3519;
+  color: white;
+  border: 1px solid #2c3519;
+}
+
+/*Når popover er åben*/
+.oliepopover:popover-open {
+  display: grid;
+  gap: 1rem;
+  justify-items: start;
+}
+
+.voresolier img {
+  width: 100%;
+  height: 70%;
+  display: block;
+  aspect-ratio: 4 /3;
+  object-fit: cover;
+}
+.oliepopover::backdrop {
+  background: rgb(30 30 30 / 0.6);
 }

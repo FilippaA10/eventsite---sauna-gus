@@ -5,32 +5,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eventnavn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Chewy&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Chewy&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Chewy&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Metrophobic&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./starter.css">
   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
   <header class="site-header">
+    <p class="top-bar">Ny dato - 31/12/2026 - begrænset antal pladser</p>
     <div class="header-content">
-      <a class="site-logo" href="./">Sansehytten</a>
+      <a class="site-logo" href="index.html">
+        <img class="logo-billede" src="" alt="">
+        <span>Sanse Hytten</span>
+      </a>
       <nav class="site-nav">
         <button>Menu</button>
         <ul class="menu" id="menu" popover>
           <li><a href="./" aria-current="page">Forside</a></li>
-          <li><a href="./svg.html">Interaktiv SVG</a></li>
-          <li><a href="./form.html">Formular</a></li>
+          <li><a href="./svg.html">Elementer</a></li>
+          <li><a href="./form.html">Tilmelding</a></li>
+          <li><a href="#">Kontakt</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-
-    <video muted autoplay loop playsinline height="300" width="800"
-      src="./img/34121B43-0A54-4662-A92B-77A679BB7C53.MOV"></video>
-
+    <div class="container">
+      <h1 class="h1forside">SANSEHYTTEN</h1>
+      <img class="saunaforside" src="img/saunaudsigt.webp" alt="Forside">
+      <p class="punderh1">En sauna, hvor hver seance er komponeret omkring sanserne — æteriske olier, de fire elementer
+        og tid til at
+        være til
+        stede.</p>
+      <a href="form.html" class="buttonforside">Tilmeld dig nu</a>
+    </div>
     <div class="grid-forsidetekst">
-      <div>
+      <div class="omhytten">
         <h2> Om hytten </h2>
         <p>Sanse Hytten er et lille, roligt rum til dem, der vil mere end bare at svede. Vi har skabt et sted, hvor
           varmen,
@@ -40,7 +65,7 @@
           til
           at mærke efter.</p>
       </div>
-      <div>
+      <div class="hyttenssanser">
         <h2>Hyttens sanser</h2>
         <p>
           En sansesauna er en guidet saunagus, hvor hver seance bygger på et af de fire elementer: vand, ild, luft og
@@ -51,9 +76,55 @@
           tilbage og være til stede.
         </p>
       </div>
-    </div>
 
-    <h2>Udforsk hytten</h2>
+    </div>
+    <section class="udforskhytten">
+      <!--Kort 1-->
+      <article class="voresolier">
+        <img src="img/Olier.jpg" alt="Olier på en træhylde">
+        <h3>Vores olier</h3>
+        <p>Dufte udvalgt til hver seance.</p>
+        <button popovertarget="olier-popover">Se olierne →</button>
+
+        <div class="oliepopover" id="olier-popover" popover>
+          <img src="img/Olier.jpg" alt="Olier på en træhylde">
+          <h2>Vores olier</h2>
+          <p>Vi bruger rene æteriske olier med blandt andet eukalyptus, lavendel, spearmint og citrongræs</p>
+          <button popovertarget="olier-popover">luk</button>
+
+        </div>
+      </article>
+
+      <article class="voresolier">
+        <img src="img/elememterfoto.jpg" alt="elementer">
+        <h3>Vores elementer</h3>
+        <p>Vand, ild, luft og jord</p>
+        <button popovertarget="elementer-popover">Læs mere om elementerne her →</button>
+
+        <div class="oliepopover" id="elementer-popover" popover>
+          <img src="img/elememterfoto.jpg" alt="elementer">
+          <h2>Vores elementer</h2>
+          <p>Vi bruger rene æteriske olier med blandt andet eukalyptus, lavendel, spearmint og citrongræs</p>
+          <button popovertarget="elementer-popover">luk</button>
+
+        </div>
+      </article>
+      <article class="voresolier">
+        <img src="img/sauna-forsidefoto.jpg" alt="sauna">
+        <h3>Tilmeld dig</h3>
+        <p>Find en dato og book din plads</p>
+        <button popovertarget="tilmeld-popover">Book nu →</button>
+
+        <div class="oliepopover" id="tilmeld-popover" popover>
+          <img src="img/saunaudsigt.webp" alt="Olier på en træhylde">
+          <h2>Tilmeld dig</h2>
+          <p>Vi bruger rene æteriske olier med blandt andet eukalyptus, lavendel, spearmint og citrongræs</p>
+          <button popovertarget="tilmeld-popover">luk</button>
+
+        </div>
+      </article>
+    </section>
+
   </main>
 
   <footer class="site-footer">
