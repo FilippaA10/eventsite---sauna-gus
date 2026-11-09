@@ -15,13 +15,19 @@
 <body>
   <header class="site-header">
     <div class="header-content">
-      <a class="site-logo" href="./">Eventnavn</a>
+
+      <a class="site-logo" href="index.html">
+        <img class="logo-billede" src="./img/Aktiv 8.webp" alt="">
+        <span>Sanse Hytten</span>
+      </a>
+
       <nav class="site-nav">
         <button>Menu</button>
         <ul class="menu" id="menu" popover>
           <li><a href="./">Forside</a></li>
-          <li><a href="./svg.html" aria-current="page">Interaktiv SVG</a></li>
-          <li><a href="./form.html">Formular</a></li>
+          <li><a href="./svg.html" aria-current="page">Elementer</a></li>
+          <li><a href="./form.html">Tilmelding</a></li>
+          <li><a href="./">Kontakt</a></li>
         </ul>
       </nav>
     </div>
@@ -30,29 +36,56 @@
   <main>
     <section class="svg-page">
       <header class="svg-intro">
-        <h1>Interaktiv SVG</h1>
-        <p>Indsæt din egen SVG og forbind den med punkterne nedenfor.</p>
+        <h1>Elementerne med Sanse Hytten</h1>
+        <p></p>
       </header>
 
       <section class="svg-layout">
         <div class="svg-placeholder"></div>
 
         <article class="panel">
-          <h2>Udforsk eventet</h2>
+          <h2>Hvad kan elementer tilbyde</h2>
           <div class="accordion">
             <!-- TODO: Lav om til details/summary -->
-            <div class="accordion-item">
-              <h3>Punkt 1</h3>
-              <p>Beskriv første område, aktivitet eller del af dit event.</p>
-            </div>
-            <div class="accordion-item">
-              <h3>Punkt 2</h3>
-              <p>Beskriv andet område, aktivitet eller del af dit event.</p>
-            </div>
-            <div class="accordion-item">
-              <h3>Punkt 3</h3>
-              <p>Beskriv tredje område, aktivitet eller del af dit event.</p>
-            </div>
+            <details>
+              <div class="accordion-item">
+                <h3>Ild - Mærk det</h3>
+                <p>Oplev ildens kraft og intensitet. En varm og energifyldt gus, der vækker sanserne, giver ny energi og
+                  skaber plads til
+                  fornyelse.</p>
+              </div>
+            </details>
+
+            <details>
+              <div class="accordion-item">
+                <h3>Vand - Giv slip</h3>
+                <p>Lad tankerne flyde som vand. En blid og sanselig gus, der inviterer dig til at give slip, finde indre
+                  ro og mærke
+                  kroppens naturlige flow.</p>
+              </div>
+            </details>
+
+            <details>
+              <div class="accordion-item">
+
+
+                <h3>LUft - TRæk vejret frit</h3>
+
+
+                <p>Find letheden i en gus inspireret af luftens frie bevægelser. Mærk åndedrættet, giv plads til nye
+                  tanker, og lad kroppen
+                  finde frihed og balance.</p>
+              </div>
+            </details>
+
+            <details>
+              < <div class="accordion-item">
+                <h3>Jord - Find ro</h3>
+                <p>Mærk forbindelsen til jorden. En gus inspireret af naturens stabilitet, varme og ro. Giv kroppen lov
+                  til at lande, og
+                  find balancen i dig selv..</p>
+          </div>
+          </details>
           </div>
         </article>
       </section>
@@ -61,8 +94,8 @@
 
   <footer class="site-footer">
     <div class="footer-content">
-      <p>Eventnavn</p>
-      <p>Footer</p>
+      <p>@ 2026 Sanse Hytten</p>
+      <p>Af Livia & Filippa</p>
     </div>
   </footer>
   <script src="./script.js"></script>
