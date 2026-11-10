@@ -481,3 +481,9 @@ main > * {
     background: rgb(30 30 30 / 0.6);
   }
 }
+
+.event-map {
+  width: 100%;
+  height: auto;
+  display: block;
+}
