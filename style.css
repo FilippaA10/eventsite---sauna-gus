@@ -487,3 +487,41 @@ main > * {
   height: auto;
   display: block;
 }
+/* Elementerne er dæmpede som udgangspunkt */
+.event-map .ild,
+.event-map .vand,
+.event-map .luft,
+.event-map .jord {
+  opacity: 0.3;
+  transition:
+    opacity 0.3s,
+    transform 0.3s;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+/* Det åbne element bliver fremhævet */
+.svg-placeholder[data-position="first"] .ild,
+.svg-placeholder[data-position="second"] .vand,
+.svg-placeholder[data-position="third"] .luft,
+.svg-placeholder[data-position="fourth"] .jord {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Spotten glider hen bag det åbne element */
+.event-map .spot {
+  transition: transform 0.6s ease;
+}
+
+.svg-placeholder[data-position="second"] .spot {
+  transform: translateX(310px);
+}
+
+.svg-placeholder[data-position="third"] .spot {
+  transform: translateX(620px);
+}
+
+.svg-placeholder[data-position="fourth"] .spot {
+  transform: translateX(905px);
+}
