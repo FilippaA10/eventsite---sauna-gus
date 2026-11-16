@@ -255,11 +255,13 @@ main > * {
   padding: var(--space-1);
   display: grid;
   gap: var(--space-1);
+  margin: 30px;
 }
 
 .svg-placeholder {
   min-height: -webkit-fill-available;
   min-height: stretch;
+  margin: 30px;
   background-color: #2c351943;
 }
 
@@ -487,3 +489,111 @@ main > * {
   height: auto;
   display: block;
 }
+
+
+
+/********* svg*******/
+
+.svgsideh1 {
+  font-family: Merriweather;
+}
+
+/****Form*****/
+
+
+
+form {
+  accent-color:var(--color-border)
+}
+
+input {
+  border: 2rem,#4b3927;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+button {
+  background: var(--color-border);
+  color: rgba(9, 48, 9, 0.739); 
+  padding: 10px; 
+  cursor: pointer;
+}
+
+.error-message {
+  color: orange;
+}
+
+form {
+  display: grid;
+  gap: 15px;
+}
+
+.form-group {
+    display: grid;
+  gap: 2px;
+}
+
+label:has(input) {
+  display: flex;
+  align-items: center;
+}
+
+:focus-visible {
+  color: rgba(6, 44, 6, 0.91); 
+}
+
+button:hover {
+  color: orange;
+}
+
+button:active {
+  color:#2e2216
+}
+
+.error-message {
+  display: none;
+}
+
+.Tilmeldingh1{
+  font-size: large;
+}
+
+/* Elementerne er dæmpede som udgangspunkt */
+.event-map .ild,
+.event-map .vand,
+.event-map .luft,
+.event-map .jord {
+  opacity: 0.3;
+  transition:
+    opacity 0.3s,
+    transform 0.3s;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+/* Det åbne element bliver fremhævet */
+.svg-placeholder[data-position="first"] .ild,
+.svg-placeholder[data-position="second"] .vand,
+.svg-placeholder[data-position="third"] .luft,
+.svg-placeholder[data-position="fourth"] .jord {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Spotten glider hen bag det åbne element */
+.event-map .spot {
+  transition: transform 0.6s ease;
+}
+
+.svg-placeholder[data-position="second"] .spot {
+  transform: translateX(310px);
+}
+
+.svg-placeholder[data-position="third"] .spot {
+  transform: translateX(620px);
+}
+
+.svg-placeholder[data-position="fourth"] .spot {
+  transform: translateX(905px);
+}
+

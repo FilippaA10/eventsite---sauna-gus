@@ -20,8 +20,9 @@
         <button>Menu</button>
         <ul class="menu" id="menu" popover>
           <li><a href="./">Forside</a></li>
-          <li><a href="./svg.html">Interaktiv SVG</a></li>
-          <li><a href="./form.html" aria-current="page">Formular</a></li>
+          <li><a href="./svg.html">Elementer</a></li>
+          <li><a href="./form.html" aria-current="page">Tilmelding</a></li>
+          <li><a href="#">Kontakt</a></li>
         </ul>
       </nav>
     </div>
@@ -30,47 +31,81 @@
   <main>
     <section class="form-page">
       <header class="form-intro">
-        <h1>Formular</h1>
-        <p>Lav en formular, der sender brugeren videre til opsamlingssiden.</p>
+        <h1>Din huskeliste </h1>
+        <p>Ting du skla huske når du skal i Sanse hytten </p>
+
+        <div>
+
+          <div>1 Badetøj</div>
+          <div>2 Drikke dunk</div>
+          <div>3 håndklæde</div>
+
+          <p>Vi ses i Hytten</p>
+        </div>
       </header>
 
       <form class="form-placeholder" action="./opsamling.html">
-        <labe> Fulde navn </label>
-          <input type="name">
 
+        <fieldset>
 
+          <legend class="Tilmeldingh1">Tilmeld dig her</legend>
 
-          <labe> Fødseldag</label>
-            <input type="date">
+          <div>
+            <labe> Fulde navn </label>
+              <input type="name" id="navn" required>
+          </div>
 
+          <div>
             <labe> Email</label>
-              <input type="Email">
+              <input type="Email" id="mail" required>
+          </div>
 
-              <labe> Telefonnummer</label>
-                <input>
+          <div>
+            <labe> Telefonnummer</label>
+              <input id="nummer" required>
+          </div>
 
-                <labe> Hvilket hold vil du tilmelde dig?</label>
-                  <label> 10.12.2026
-                    <input type="checkbox">
-                  </label>
-                  <label> 11.12.2026
-                    <input type="checkbox">
-                  </label>
-                  <label> 13.12.2026
-                    <input type="checkbox">
-                  </label>
-                  <label> Jeg accpetpere Sauna hyttens retnings linjer
-                    <input type="checkbox">
-                  </label <button> Godkend nu </button>
+          <legend>
+            <div>
+              <labe> Hvilket hold vil du tilmelde dig?</label>
+                <label> 11.12.2026 - by night
+                  <input type="checkbox" required id="nat">
+                </label>
 
-      </form>
+                <label> 12.12.2026 - by day
+                  <input type="checkbox" required id="dag">
+                </label>
+            </div>
+
+          </legend>
+          <div>
+
+            <label> Vælg di fortrukende element</label>
+            <select id="valg" name="behandling" required>
+              <option value="">Vælg her</option>
+              <option value="vand">Vand</option>
+              <option value="Jord">Jord</option>
+              <option value="Ild">Ild</option>
+              <option value="Luft">Luft</option>
+            </select>
+          </div>
+
+          <label> Jeg accpetpere Sauna hyttens retnings linjer
+            <input type="checkbox">
+          </label </form>
+          <button> Tilmeld nu </button>
+
+
+
+        </fieldset>
+
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="footer-content">
-      <p>Eventnavn</p>
-      <p>Footer</p>
+      <p>@ 2026 Sanse Hytten</p>
+      <p>Af Livia & Filippa</p>
     </div>
   </footer>
   <script src="./script.js"></script>
