@@ -489,75 +489,6 @@ main > * {
   height: auto;
   display: block;
 }
-
-
-
-/********* svg*******/
-
-.svgsideh1 {
-  font-family: Merriweather;
-}
-
-/****Form*****/
-
-
-
-form {
-  accent-color:var(--color-border)
-}
-
-input {
-  border: 2rem,#4b3927;
-  border-radius: 10px;
-  padding: 10px;
-}
-
-button {
-  background: var(--color-border);
-  color: rgba(9, 48, 9, 0.739); 
-  padding: 10px; 
-  cursor: pointer;
-}
-
-.error-message {
-  color: orange;
-}
-
-form {
-  display: grid;
-  gap: 15px;
-}
-
-.form-group {
-    display: grid;
-  gap: 2px;
-}
-
-label:has(input) {
-  display: flex;
-  align-items: center;
-}
-
-:focus-visible {
-  color: rgba(6, 44, 6, 0.91); 
-}
-
-button:hover {
-  color: orange;
-}
-
-button:active {
-  color:#2e2216
-}
-
-.error-message {
-  display: none;
-}
-
-.Tilmeldingh1{
-  font-size: large;
-}
-
 /* Elementerne er dæmpede som udgangspunkt */
 .event-map .ild,
 .event-map .vand,
@@ -596,4 +527,3 @@ button:active {
 .svg-placeholder[data-position="fourth"] .spot {
   transform: translateX(905px);
 }
-
