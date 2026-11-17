@@ -297,6 +297,11 @@ main > * {
   color: var(--color-muted);
 }
 
+.titelsvg {
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+}
+
 /* Knap/link */
 .button {
   justify-self: start;
@@ -444,6 +449,7 @@ main > * {
 }
 
 .voresolier {
+  gap: 10p;
   background: #2c351918;
   padding: 1rem;
   color: #4b3927;
@@ -531,4 +537,139 @@ main > * {
 
 .svg-placeholder[data-position="fourth"] .spot {
   transform: translateX(905px);
+}
+
+/****form****/
+
+form {
+  accent-color: var(--color-page);
+  display: grid;
+}
+.form-placeholder {
+  padding: 30px;
+  box-shadow: 0 1px 15px color-mix var(--color-border);
+  border-radius: 10px;
+  background-color: #684a2b5f;
+}
+
+input,
+select {
+  border: 1px solid rgb(80, 62, 41);
+  border-radius: 6px;
+  padding: 1rem;
+  width: 100%;
+  font-size: 2;
+  color: #2e1c14;
+}
+
+button {
+  font-family: "Roboto Mono", monospace;
+  cursor: pointer;
+  border: 1px solid #57382a;
+  color: #ffffff;
+  background: #4b3927;
+  padding-inline: 15px;
+  padding-block: 5px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #d25422a7;
+}
+
+.huskeliste {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1px;
+  padding: 1rlh;
+  border: none;
+  border: #64513d solid 1px;
+  display: grid;
+  gap: 2px;
+  overflow: clip;
+  border-radius: 12px;
+  outline: 1px solid oklch(36.422% 0.05571 48.947);
+  list-style: none;
+}
+
+.huskeliste-div {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  list-style: none;
+  color: #64513d;
+  font-family: "Roboto Mono", monospace;
+}
+
+.sesihytten {
+  font-style: italic;
+  color: #433425;
+  font-family: "Metrophobic", sans-serif;
+}
+
+.h2form {
+  font-family: "Merriweather", serif;
+  color: rgba(205, 78, 32, 0.816);
+  font-weight: 800;
+  font-size: 2.5;
+}
+
+label {
+  font-size: 2;
+  color: #2e1c14;
+}
+
+.dinhuskeliste {
+  font-family: "Merriweather", serif;
+  color: #412b15;
+  font-weight: 800;
+}
+.huskep {
+  font-style: italic;
+}
+.form-placeholder {
+  width: 100%;
+  padding: 40px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.form-placeholder input,
+.form-placeholder select {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-placeholder fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+  border-radius: 10px;
+}
+
+#viden {
+  width: 100%;
+}
+
+#allergener {
+  margin-bottom: 20px;
+}
+
+.range {
+  display: flex;
+  align-items: center;
+}
+
+#intet {
+  margin-inline: 0 10px;
+}
+
+#meget {
+  margin-inline: 10px 0;
+}
+
+.error-message {
+  color: #ee5050;
+  display: none;
 }
