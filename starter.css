@@ -86,3 +86,15 @@ dialog {
   white-space: nowrap;
   clip-path: inset(100%);
 }
+
+
+/*****mobilsiteforside****/
+
+@media (width > 800px) {
+  .udforskhytten {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+}
