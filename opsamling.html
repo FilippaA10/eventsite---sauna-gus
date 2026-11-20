@@ -12,14 +12,20 @@
 <body>
   <header class="site-header">
     <div class="header-content">
-      <a class="site-logo" href="./">Eventnavn</a>
+      <a class="site-logo" href="index.html">
+        <img class="logo-billede" src="./img/Aktiv8.webp" alt="">
+        <span>Sanse Hytten</span>
+      </a>
       <nav class="site-nav">
-        <button>Menu</button>
+        <button popovertarget="menu">Menu</button>
         <ul class="menu" id="menu" popover>
           <li><a href="./">Forside</a></li>
-          <li><a href="./svg.html">Interaktiv SVG</a></li>
-          <li><a href="./form.html" aria-current="page">Formular</a></li>
+          <li><a href="./svg.html">Elementerne</a></li>
+          <li><a href="./form.html"> Tilmelding</a></li>
+          <li><a href="./404.html">Kontakt</a></li>
         </ul>
+
+
       </nav>
     </div>
   </header>
@@ -27,24 +33,45 @@
   <main>
     <section class="opsamling-page">
       <div class="opsamling-intro">
-        <h1>Opsamling</h1>
-        <p>Vis brugerens valg som et pass, en invitation eller noget andet, der passer til dit event.</p>
+        <h1 class="h1opsamling">Din kvittering</h1>
+        <p>Du skal huske at medbringe denne kvittering til din session.</p>
         <div class="actions">
-          <a class="button" href="./form.html">Tilbage til formular</a>
+          <a class="button" href="./index.html">Tilbage til forside</a>
         </div>
       </div>
 
-      <article class="opsamling-placeholder"></article>
+      <article class="opsamling-placeholder" id="kort">
+      </article>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="footer-content">
-      <p>Eventnavn</p>
-      <p>Footer</p>
+      <p>@2026 Sanse Hytten</p>
+      <p> Af Livia & Filippa</p>
     </div>
   </footer>
   <script src="./script.js"></script>
 </body>
 
 </html>
+<!-- 
+  <h1>Tak for din tilmelding</h1>
+  
+  <p>Du er nu tilmeldt Sansehyttens Saunagus</p>
+  
+  <h2 class="datotekst">d. 11.12.2026, klokken 22:00</h2>
+  
+  <p>
+    Vi glæder os til at se dig og guide dig igennem de fire elementer: vand, ild, jord og luft.
+    Det bliver en sanselig oplevelse, der kan styrke din ro og forbindelse til dig selv.
+  
+    Vi anbefaler, at du kommer 15 minutter før din session, så du kan ankomme i ro og mag.
+  
+    Du finder os på Refshalevej 143. Har du spørgsmål, eller kan du ikke komme alligevel, så skriv til os på
+    sansehytten@gmail.com senest 12 timer før. Vi ses snart!
+  </p>
+  
+  <p class="farvelp">
+    - Sanse Hytten
+  </p> -->

@@ -12,9 +12,25 @@
 <body>
   <header class="site-header">
     <div class="header-content">
-      <a class="site-logo" href="./">Eventnavn</a>
+      <a class="site-logo" href="index.html">
+        <img class="logo-billede" src="./img/Aktiv8.webp" alt="">
+        <span>Sanse Hytten</span>
+      </a>
+
+      <nav class="site-nav">
+        <button popovertarget="menu">Menu</button>
+        <ul class="menu" id="menu" popover>
+          <li><a href="./">Forside</a></li>
+          <li><a href="./svg.html">Elementer</a></li>
+          <li><a href="./form.html" aria-current="page">Tilmelding</a></li>
+          <li><a href="./404.html">Kontakt</a></li>
+        </ul>
+
+
+      </nav>
     </div>
   </header>
+
 
   <main>
     <section class="error-page">
@@ -25,8 +41,10 @@
   </main>
 
   <footer class="site-footer">
-    <p>Eventnavn</p>
-    <p>Footer</p>
+    <div class="footer-content">
+      <p>@2026 Sanse Hytten</p>
+      <p>Af Livia & Filippa</p>
+    </div>
   </footer>
 </body>
 

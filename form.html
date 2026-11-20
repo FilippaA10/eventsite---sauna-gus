@@ -16,15 +16,18 @@
   <header class="site-header">
     <div class="header-content">
       <a class="site-logo" href="index.html">
-        <img class="logo-billede" src="./img/Aktiv 8.webp" alt="">
+        <img class="logo-billede" src="./img/Aktiv8.webp" alt="">
         <span>Sanse Hytten</span>
       </a>
-      <ul class="menu" id="menu" popover>
-        <li><a href="./">Forside</a></li>
-        <li><a href="./svg.html">Elementer</a></li>
-        <li><a href="./form.html" aria-current="page">Tilmelding</a></li>
-        <li><a href="./kontakt.html">Kontakt</a></li>
-      </ul>
+      <nav class="site-nav">
+        <button popovertarget="menu">Menu</button>
+        <ul class="menu" id="menu" popover>
+          <li><a href="./">Forside</a></li>
+          <li><a href="./svg.html">Elementer</a></li>
+          <li><a href="./form.html" aria-current="page">Tilmelding</a></li>
+          <li><a href="./404.html">Kontakt</a></li>
+        </ul>
+
       </nav>
     </div>
   </header>
@@ -32,101 +35,103 @@
   <main>
     <section class="form-page">
       <header class="form-intro">
-        <h1 class="dinhuskeliste">Din huskeliste </h1>
-        <p class="huskep">Ting du skal huske når du skal i Sanse hytten </p>
 
-        <ol class="huskeliste">
+        <div class="heleliste">
+          <h1 class="dinhuskeliste">Din huskeliste </h1>
+          <p class="huskep">Ting du skal huske når du skal i Sanse hytten </p>
 
-          <li>
+          <ol class="huskeliste">
 
-            <div class="huskeliste-div"> ♥ Badetøj</div>
-          </li>
+            <li>
 
-          <li>
+              <div class="huskeliste-div"> • Badetøj</div>
+            </li>
 
-            <div class="huskeliste-div"> ♥ Håndklæde</div>
-          </li>
+            <li>
 
-          <li>
+              <div class="huskeliste-div"> • Håndklæde</div>
+            </li>
 
-            <div class="huskeliste-div"> ♥ Drikkedunk</div>
-          </li>
+            <li>
 
-          <li>
-
-            <div class="huskeliste-div"> ♥ Godt humør</div>
-          </li>
-
-          <p class="sesihytten">Vi ses i Hytten</p>
+              <div class="huskeliste-div"> • Drikkedunk</div>
+            </li>
 
 
-        </ol>
+            <li>
+
+              <div class="huskeliste-div"> • Godt humør</div>
+            </li>
+
+
+
+
+          </ol>
 
 
 
         </div>
       </header>
 
-      <form class="form-placeholder" action="./opsamling.html">
+      <form class="form-placeholder" action="./opsamling.html" method="get">
 
         <fieldset>
 
           <h2 class="h2form">Tilmeld dig her </h2>
 
           <div>
-            <labe> Fulde navn </label>
-              <input type="name" id="navn" required>
+            <label> Fulde navn </label>
+            <input type="text" id="navn" name="navn" required>
           </div>
 
           <div>
-            <labe> Email</label>
-              <input type="Email" id="mail" required>
+            <label> Email</label>
+            <input type="Email" id="mail" name="mail" required>
           </div>
 
           <div>
-            <labe> Telefonnummer</label>
-              <input id="nummer" required>
+            <label> Telefonnummer</label>
+            <input tyoe="tel" id="nummer" name="nummer" required>
           </div>
 
 
-
-          <labe> Hvilket hold vil du tilmelde dig?</label>
-            <label> 11.12.2026 - by night
-              <input type="checkbox" required id="nat">
+          <fieldset>
+            <legend>Hvilket hold vil du tilmelde dig?</legend>
+            <label class="nat"> 11.12.2026 - by night
+              <input type="radio" name="hold" value="night">
             </label>
 
-            <label> 12.12.2026 - by day
-              <input type="checkbox" required id="dag">
+            <label class="dag"> 12.12.2026 - by day
+              <input type="radio" name="hold" value="day">
             </label>
+          </fieldset>
 
 
+          <div>
+            <label> Vælg dine fortrukende element</label>
+            <select id="valg" name="behandling" required>
+              <option value="">Vælg her</option>
+              <option value="Vand">Vand</option>
+              <option value="Jord">Jord</option>
+              <option value="Ild">Ild</option>
+              <option value="Luft">Luft</option>
+            </select>
+          </div>
 
-            <div>
-              <label> Vælg dine fortrukende element</label>
-              <select id="valg" name="behandling" required>
-                <option value="">Vælg her</option>
-                <option value="vand">Vand</option>
-                <option value="Jord">Jord</option>
-                <option value="Ild">Ild</option>
-                <option value="Luft">Luft</option>
-              </select>
-            </div>
-
-            <label> Jeg accpetpere Sauna hyttens retnings linjer
-              <input type="checkbox">
-            </label </form>
-            <button> Tilmeld nu </button>
+          <label class="slutning"> Jeg accepterer Sauna hyttens retnings linjer
+            <input type="checkbox" required>
+          </label> <button type="submit"> Tilmeld nu </button>
 
 
 
         </fieldset>
-
+      </form>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="footer-content">
-      <p>@ 2026 Sanse Hytten</p>
+      <p>@2026 Sanse Hytten</p>
       <p>Af Livia & Filippa</p>
     </div>
   </footer>
