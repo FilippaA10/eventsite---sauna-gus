@@ -1,3 +1,4 @@
+
 /*animations*/
 
 @keyframes progress {
@@ -52,11 +53,7 @@
   animation-range: 10% 50%;
 }
 
-<<<<<<< HEAD
-h1 {
-=======
 .h1forside {
->>>>>>> 4df73745f983d5697dd5f973d72d4fdf73ea8c79
   position: sticky;
   inset-block-start: 1vh;
   inset-block-start: 1vh;
@@ -65,17 +62,10 @@ h1 {
   transform-origin: 0 25vh;
   animation-timeline: scroll();
 }
-<<<<<<< HEAD
-html::before {
-  content: "";
-  block-size: 4px;
-  background-color: red;
-=======
 .forside::before {
   content: "";
   block-size: 4px;
   background-color: #ef7d31;
->>>>>>> 4df73745f983d5697dd5f973d72d4fdf73ea8c79
   position: fixed;
   inset: 0 0 auto 0;
   z-index: 9999;
@@ -90,10 +80,7 @@ html::before {
   animation-range: 10% 40%;
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 4df73745f983d5697dd5f973d72d4fdf73ea8c79
 /*fonts*/
 
 /*h1*/
